@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: #e5e5f7;
+	opacity: 1;
+	background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+	background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+main {
+	align-items: center;
+	background-color: #eee;
+
+	border: 1px solid #444;
+	display: flex;
+	justify-content: center;
+	height: 90vh;
+}
+main h2 {
+	color: white;
+	margin-bottom: 5vh;
+}
+form {
+	border: 1px solid #666;
+	border-radius: 5px;
+	color: white;
+	padding: 30px;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,0.8491771708683473) 0%, 
+	rgba(17,178,210,1) 49%, 
+	rgba(2,0,36,0.7763480392156863) 100%);
+}
+
+label, button {
+	margin: 1vh 0;
+	display: block;
+}
+input, button {
+	border: solid 1px #333;
+	border-radius: 5px;
+	height: 25px;
+	width: 100%;
+}
+input {
+	margin-bottom: 2vh;
+	outline: none;
+}
+input::placeholder {
+	padding-left: 4px;
+}
+
+
+/* This is our style for the invalid fields */
+input.invalid {
+	border-color: #900;
+	background-color: #fdd;
+}
+
+input:focus.invalid {
+	outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+	width: 100%;
+	padding: 0;
+
+	font-size: 80%;
+	color: white;
+	background-color: #f00;
+	border-radius: 0 0 5px 5px;
+	box-sizing: border-box;
+}
+
+.error.active {
+	padding: 0.3em;
+}
+
+button {
+	font-weight: bold;
+}
+
+
